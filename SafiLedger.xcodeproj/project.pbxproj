@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		593C987A309A434C00EB4C77 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 593C9879309A434C00EB4C77 /* FirebaseAuth */; };
+		593C987C309A434C00EB4C77 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 593C987B309A434C00EB4C77 /* FirebaseFirestore */; };
+		597B741C3093972E003E3606 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 597B741B3093972E003E3606 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		597B73F730939137003E3606 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,9 +33,25 @@
 		597B73E630939135003E3606 /* SafiLedger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafiLedger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		597B73F630939137003E3606 /* SafiLedgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafiLedgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		597B740030939137003E3606 /* SafiLedgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafiLedgerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		597B741B3093972E003E3606 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		593C98A8309A47AD00EB4C77 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		593C98AC309A47B100EB4C77 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		593C98AF309A47B500EB4C77 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
 		597B73E830939135003E3606 /* SafiLedger */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SafiLedger;
@@ -52,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593C987A309A434C00EB4C77 /* FirebaseAuth in Frameworks */,
+				593C987C309A434C00EB4C77 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +103,10 @@
 				597B73F930939137003E3606 /* SafiLedgerTests */,
 				597B740330939137003E3606 /* SafiLedgerUITests */,
 				597B73E730939135003E3606 /* Products */,
+				597B741B3093972E003E3606 /* GoogleService-Info.plist */,
+				593C98A8309A47AD00EB4C77 /* Views */,
+				593C98AC309A47B100EB4C77 /* ViewModels */,
+				593C98AF309A47B500EB4C77 /* Models */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,10 +136,15 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				593C98A8309A47AD00EB4C77 /* Views */,
+				593C98AC309A47B100EB4C77 /* ViewModels */,
+				593C98AF309A47B500EB4C77 /* Models */,
 				597B73E830939135003E3606 /* SafiLedger */,
 			);
 			name = SafiLedger;
 			packageProductDependencies = (
+				593C9879309A434C00EB4C77 /* FirebaseAuth */,
+				593C987B309A434C00EB4C77 /* FirebaseFirestore */,
 			);
 			productName = SafiLedger;
 			productReference = 597B73E630939135003E3606 /* SafiLedger.app */;
@@ -195,6 +228,9 @@
 			);
 			mainGroup = 597B73DD30939135003E3606;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				593C9878309A434C00EB4C77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 597B73E730939135003E3606 /* Products */;
 			projectDirPath = "";
@@ -212,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597B741C3093972E003E3606 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +589,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		593C9878309A434C00EB4C77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		593C9879309A434C00EB4C77 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 593C9878309A434C00EB4C77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		593C987B309A434C00EB4C77 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 593C9878309A434C00EB4C77 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 597B73DE30939135003E3606 /* Project object */;
 }
