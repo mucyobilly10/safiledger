@@ -10,12 +10,16 @@ The business payments brain for businesses & banks. Built with SwiftUI and Fireb
 - Clean MVVM architecture separating logic from the UI
 
 ## Screenshots
-![Sign In]
+Sign In
 
 <img width="2031" height="947" alt="login_screenshot" src="https://github.com/user-attachments/assets/8fe2549f-55ea-4592-baf3-669da22a5a6b" />
 
-![Transaction List]
+Transaction List
 <img width="2012" height="911" alt="transaction_screenshot" src="https://github.com/user-attachments/assets/08614ff4-c5b3-4f66-8846-d453ea7b248e" />
+
+Firebase
+
+<img width="1191" height="1102" alt="firebase" src="https://github.com/user-attachments/assets/7f87c6e7-19d8-4b13-9213-246501b034f4" />
 
 
 ## Built with
